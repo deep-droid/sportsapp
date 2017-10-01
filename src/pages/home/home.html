@@ -1,4 +1,4 @@
-<ion-header>
+<!--<ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -6,21 +6,68 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
+-->
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
+<!--  <h3>Ionic Menu Starter</h3>
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
+-->
+  <!--<button ion-button secondary menuToggle>Toggle Menu PushUp</button>-->
+  <ion-item>
+    <button ion-button full color="dark">Workout</button>
+    <button ion-button full color="dark">Statictics</button>
+    <button ion-button full color="dark">History</button>
+    <button ion-button full color="dark">Settings</button>
+  </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu PushUp</button>
-  <button ion-button color="dark">Dark</button>
+  <!--<ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value="0"></ion-input>
+  </ion-item>-->
 
-  <button ion-button color="light">Another page Outline</button>
+  <ion-label full>Current</ion-label>
+  <ion-item>
+    <ion-range min="0" max="150" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>150</ion-label>
+    </ion-range>
+  </ion-item>
+
+  <ion-label full>Target</ion-label>
+  <ion-item>
+    <ion-range min="0" max="150" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>150</ion-label>
+    </ion-range>
+  </ion-item>
+
+
+  <!--<ion-item>
+    <ion-range [(ngModel)]="brightness">
+      <ion-icon range-left small name="sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>-->
+
+
+  <ion-label>WORKOUT FEEDBACK</ion-label>
+  <ion-item>
+    <button ion-button full color="blue">Too easy</button>
+  </ion-item>
+  <ion-item>
+    <button ion-button full color="secondary">OK</button>
+  </ion-item>
+  <ion-item>
+    <button ion-button full color="danger">Too hard</button>
+  </ion-item>
+
+  <button ion-button full [navPush]="pushPage">Push New Page</button>
+  <button ion-button full navPop>Go Back</button>
+
 
   <ion-list>
-
+<!--
   <ion-item>
     <ion-label>Beginner</ion-label>
     <ion-checkbox [(ngModel)]="beginner"></ion-checkbox>
@@ -40,7 +87,7 @@
     <ion-label>Pro</ion-label>
     <ion-checkbox [(ngModel)]="pro"></ion-checkbox>
   </ion-item>
-
+-->
 </ion-list>
 
 </ion-content>
