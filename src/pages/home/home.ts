@@ -16,4 +16,9 @@ export class HomePage {
       dismissOnPageChange: true
     }).present();
   }
+
+  myMethod()
+  {
+    
+  }
 }

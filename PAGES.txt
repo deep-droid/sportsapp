@@ -1,0 +1,16 @@
+Home
+Workout
+Statistics
+Feedback
+Practice
+History
+Settings
+
+
+Run the following command to generate a new add-item page:
+
+ionic g page AddItem
+
+IMPORTANT: When pages are generated in Ionic, something called “lazy loading” is set up by default. To keep things simple, we will not be covering that in this tutorial. To make sure you do not run into any issues, you should delete the add-item.module.ts file that is generated. The @IonicPage() decorator should also be removed from the add-item.ts file.
+
+Whenever we create a new page, we need to ensure that it is imported into our app.module.ts, and declared in the declarations and entryComponents arrays.

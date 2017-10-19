@@ -36,7 +36,7 @@
 
   <ion-label full>Target</ion-label>
   <ion-item>
-    <ion-range min="0" max="150" color="secondary">
+    <ion-range min="0" max="150" color="secondary"  (ionChange)="myMethod($event)">
       <ion-label range-left>0</ion-label>
       <ion-label range-right>150</ion-label>
     </ion-range>
@@ -44,7 +44,7 @@
   <ion-label full>Value: </ion-label>
 
     <button ion-button block (click)="presentLoading()">Show Loading</button>
-  
+
   <!--<ion-item>
     <ion-range [(ngModel)]="brightness">
       <ion-icon range-left small name="sunny"></ion-icon>

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
+import { AddItemPage } from '../add-item/add-item'
 import { ItemDetailPage } from '../item-details/item-details';
-import { AddItemPage } from '../add-item/add-item';
 import { Data } from '../providers/data';
 
 @Component({
-
   selector: 'page-home',
   templateUrl: 'home.html'
 })
@@ -13,7 +12,7 @@ export class HomePage {
 
   public items = [];
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public dataService: Data) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public dataService: data) {
 
     this.dataService.getData().then((todos) => {
 

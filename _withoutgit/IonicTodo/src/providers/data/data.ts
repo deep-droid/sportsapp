@@ -2,7 +2,7 @@ import { Storage } from '@ionic/storage';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class Data {
+export class data {
 
   constructor(public storage: Storage){
 
