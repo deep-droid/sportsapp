@@ -22,4 +22,19 @@ export class FeedbackPage {
     console.log('ionViewDidLoad FeedbackPage');
   }
 
+  saveItem(){
+
+    // let newItem = {
+    //   title: this.title,
+    //   description: this.description
+    // };
+
+    //this.navParams.dismiss();
+
+  }
+
+  close(){
+    //this.navParams.dismiss();
+  }
+
 }

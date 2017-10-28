@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+//Add imports
 import { FeedbackPage } from '../pages/feedback/feedback';
 import { HistoryPage } from '../pages/history/history';
 import { PracticePage } from '../pages/practice/practice';
@@ -16,11 +17,13 @@ import { StatisticsPage } from '../pages/statistics/statistics';
 import { WorkoutPage } from '../pages/workout/workout';
 import { TimerPage } from '../pages/timer/timer';
 
+//
 @NgModule({
+  //add Declarations for new pages
   declarations: [
     MyApp,
     HomePage,
-    //ListPage,
+
     FeedbackPage,
     HistoryPage,
     PracticePage,
@@ -34,10 +37,11 @@ import { TimerPage } from '../pages/timer/timer';
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
+  //add entryComponents for new pages
   entryComponents: [
     MyApp,
     HomePage,
-    //ListPage
+
     FeedbackPage,
     HistoryPage,
     PracticePage,

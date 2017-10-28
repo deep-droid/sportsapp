@@ -10,6 +10,16 @@
     <ion-title>Feedback</ion-title>
   </ion-navbar>
 
+  <ion-toolbar color="secondary">
+    <ion-title>
+      Add Item
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">Feedback</button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <button full ion-button color="secondary" (click)="saveItem()">Save</button>
 </ion-header>
 
 
