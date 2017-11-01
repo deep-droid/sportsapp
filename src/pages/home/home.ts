@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
 import { LoadingController } from 'ionic-angular';
-
+import { PracticePage } from '../../pages/practice/practice'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
 
-  constructor(public loadingCtrl: LoadingController) { }
+  pushPage : any;
+  params : Object;
+
+  constructor(public loadingCtrl: LoadingController) {
+    this.pushPage = PracticePage
+    this.params = 0;
+   }
 
   presentLoading() {
     this.loadingCtrl.create({
@@ -19,6 +25,6 @@ export class HomePage {
 
   myMethod()
   {
-    
+
   }
 }
